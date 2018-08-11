@@ -18,6 +18,10 @@ $(call inherit-product, $(SRC_TARGET_DIR)/product/aosp_base_telephony.mk)
 
 $(call inherit-product, device/motorola/athene/full_athene.mk)
 
+# Temporarily disable MotoActions
+
+MOTO_ACTIONS := false
+
 ## Device identifier. This must come after all inclusions
 PRODUCT_DEVICE := athene
 PRODUCT_NAME := aosp_athene
